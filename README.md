@@ -10,5 +10,5 @@ This is a tool that will try to help with the learning of japanese. It will be l
 ## How it works
 
 -   start the app:
-    -   `npm run json-server` to start the server
-    -   `npm run start` to start the application
+    -   `npm run start:json-server` to start the server on port 3001
+    -   `npm run start` to start the application on port 3000
