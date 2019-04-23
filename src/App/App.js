@@ -1,10 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
+import styled from 'styled-components';
 
-class App extends Component {
-	render() {
-		return <div>Japanese training tool</div>;
-	}
-}
+import './global-styles';
+import HomeContainer from '../scenes/home-container';
+
+const AppContainer = styled.div`
+	width: 100%;
+	height: 100%;
+`;
+
+const App = () => (
+	<AppContainer>
+		<BrowserRouter>
+			<AppContainer>
+				<Route path="/" exact component={HomeContainer} />
+			</AppContainer>
+		</BrowserRouter>
+	</AppContainer>
+)
 
 export default App;
