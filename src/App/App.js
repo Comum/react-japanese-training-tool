@@ -9,7 +9,11 @@ const AppContainer = styled.div`
 	width: 100%;
 	height: 100%;
 
-	background-image: url("assets/background.jpg");
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-image: url('assets/background.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -23,6 +27,6 @@ const App = () => (
 			</AppContainer>
 		</BrowserRouter>
 	</AppContainer>
-)
+);
 
 export default App;
