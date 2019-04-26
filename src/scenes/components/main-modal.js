@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ContentContainer = styled.div`
-	width: 500px;
+	width: 650px;
 	height: 500px;
 
 	background-color: white;
