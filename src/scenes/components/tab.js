@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Tab = props => {
-	const { name, selected } = props;
+	const { name, selected, id, callback } = props;
 	let backgroundColor = '#C8C8C8';
 	let backgroundColorHover = '#DCDCDC';
 
@@ -31,7 +31,7 @@ const Tab = props => {
 		}
 	`;
 
-	return <TabWrapper>{name}</TabWrapper>;
+	return <TabWrapper onClick={() => callback(id)}>{name}</TabWrapper>;
 };
 
 export default Tab;

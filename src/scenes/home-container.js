@@ -14,10 +14,30 @@ class HomeContainer extends React.Component {
 		],
 	};
 
+	handleTabClick = id => {
+		let newTabsState = [];
+
+		this.state.tabs.forEach(state => {
+			let newSelectedState = false;
+
+			if (state.id === id) {
+				newSelectedState = true;
+			}
+
+			newTabsState.push({
+				id: state.id,
+				name: state.name,
+				selected: newSelectedState,
+			});
+		});
+
+		this.setState({ ...this.state, tabs: newTabsState });
+	};
+
 	render() {
 		return (
 			<MainModal>
-				<TabsContainer tabs={this.state.tabs} />
+				<TabsContainer tabs={this.state.tabs} handleTabClick={this.handleTabClick} />
 			</MainModal>
 		);
 	}

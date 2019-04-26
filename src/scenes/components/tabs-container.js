@@ -16,16 +16,17 @@ const TabsWrapper = styled.ul`
 	align-items: center;
 `;
 
-const getTabsList = tabs => {
+const getTabsList = (tabs, cb) => {
 	if (!tabs.length) {
 		return <div />;
 	}
 
-	return tabs.map(tab => <Tab name={tab.name} selected={tab.selected} key={tab.id} />);
+	return tabs.map(tab => <Tab name={tab.name} selected={tab.selected} id={tab.id} callback={cb} key={tab.id} />);
 };
 
 const TabsContainer = props => {
-	const tabsList = getTabsList(props.tabs);
+	const { handleTabClick, tabs } = props;
+	const tabsList = getTabsList(tabs, handleTabClick);
 
 	return <TabsWrapper>{tabsList}</TabsWrapper>;
 };
