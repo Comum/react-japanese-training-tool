@@ -13,33 +13,34 @@ const ContentContainer = styled.section`
 class HomeContainer extends React.Component {
 	state = {
 		tabs: [
-			{ id: 1, name: 'Intro', selected: true },
-			{ id: 2, name: 'Hiragana', selected: false },
-			{ id: 3, name: 'Katakana', selected: false },
-			{ id: 4, name: 'Alphabet practice', selected: false },
-			{ id: 5, name: 'Rules', selected: false },
+			{ id: 1, name: 'Intro', selected: true, contentName: 'intro' },
+			{ id: 2, name: 'Hiragana', selected: false, contentName: 'hiragana' },
+			{ id: 3, name: 'Katakana', selected: false, contentName: 'katakana' },
+			{ id: 4, name: 'Alphabet practice', selected: false, contentName: 'alphabet' },
+			{ id: 5, name: 'Rules', selected: false, contentName: 'rules' },
         ],
         content: 'intro'
 	};
 
 	handleTabClick = id => {
-		let newTabsState = [];
+        let newTabsState = [];
+        let newContentState = this.state.content;
 
 		this.state.tabs.forEach(state => {
 			let newSelectedState = false;
 
 			if (state.id === id) {
-				newSelectedState = true;
+                newSelectedState = true;
+                newContentState = state.contentName;   
 			}
 
 			newTabsState.push({
-				id: state.id,
-				name: state.name,
+				...state,
 				selected: newSelectedState,
 			});
 		});
 
-		this.setState({ ...this.state, tabs: newTabsState });
+		this.setState({ ...this.state, tabs: newTabsState, content: newContentState });
     };
     
     getContentToShow(content) {
