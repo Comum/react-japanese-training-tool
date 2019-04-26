@@ -1,8 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import MainModal from './components/main-modal';
 import TabsContainer from './components/tabs-container';
+import IntroContent from './content/intro-content';
+import DefaultContent from './content/default-content';
 
+const ContentContainer = styled.section`
+    width: 100%;
+    height: calc(100% - 100px);
+`;
 class HomeContainer extends React.Component {
 	state = {
 		tabs: [
@@ -11,7 +18,8 @@ class HomeContainer extends React.Component {
 			{ id: 3, name: 'Katakana', selected: false },
 			{ id: 4, name: 'Alphabet practice', selected: false },
 			{ id: 5, name: 'Rules', selected: false },
-		],
+        ],
+        content: 'intro'
 	};
 
 	handleTabClick = id => {
@@ -32,12 +40,27 @@ class HomeContainer extends React.Component {
 		});
 
 		this.setState({ ...this.state, tabs: newTabsState });
-	};
+    };
+    
+    getContentToShow(content) {
+        switch(content) {
+            case 'intro':
+                return <IntroContent />;
+            default:
+                return <DefaultContent />;
+        }
+    }
 
-	render() {
+	render = () => {
+        const { content } = this.state;
+        const contentElement = this.getContentToShow(content);
+
 		return (
 			<MainModal>
 				<TabsContainer tabs={this.state.tabs} handleTabClick={this.handleTabClick} />
+                <ContentContainer>
+                    {contentElement}
+                </ContentContainer>
 			</MainModal>
 		);
 	}
