@@ -7,8 +7,8 @@ import IntroContent from './content/intro-content';
 import DefaultContent from './content/default-content';
 
 const ContentContainer = styled.section`
-    width: 100%;
-    height: calc(100% - 100px);
+	width: 100%;
+	height: calc(100% - 50px);
 `;
 class HomeContainer extends React.Component {
 	state = {
@@ -17,21 +17,22 @@ class HomeContainer extends React.Component {
 			{ id: 2, name: 'Hiragana', selected: false, contentName: 'hiragana' },
 			{ id: 3, name: 'Katakana', selected: false, contentName: 'katakana' },
 			{ id: 4, name: 'Alphabet practice', selected: false, contentName: 'alphabet' },
-			{ id: 5, name: 'Rules', selected: false, contentName: 'rules' },
-        ],
-        content: 'intro'
+			{ id: 5, name: 'Vocabulary', selected: false, contentName: 'vocabulary' },
+			{ id: 6, name: 'Rules', selected: false, contentName: 'rules' },
+		],
+		content: 'intro',
 	};
 
 	handleTabClick = id => {
-        let newTabsState = [];
-        let newContentState = this.state.content;
+		let newTabsState = [];
+		let newContentState = this.state.content;
 
 		this.state.tabs.forEach(state => {
 			let newSelectedState = false;
 
 			if (state.id === id) {
-                newSelectedState = true;
-                newContentState = state.contentName;   
+				newSelectedState = true;
+				newContentState = state.contentName;
 			}
 
 			newTabsState.push({
@@ -41,30 +42,28 @@ class HomeContainer extends React.Component {
 		});
 
 		this.setState({ ...this.state, tabs: newTabsState, content: newContentState });
-    };
-    
-    getContentToShow(content) {
-        switch(content) {
-            case 'intro':
-                return <IntroContent />;
-            default:
-                return <DefaultContent />;
-        }
-    }
+	};
+
+	getContentToShow(content) {
+		switch (content) {
+			case 'intro':
+				return <IntroContent />;
+			default:
+				return <DefaultContent />;
+		}
+	}
 
 	render = () => {
-        const { content } = this.state;
-        const contentElement = this.getContentToShow(content);
+		const { content } = this.state;
+		const contentElement = this.getContentToShow(content);
 
 		return (
 			<MainModal>
 				<TabsContainer tabs={this.state.tabs} handleTabClick={this.handleTabClick} />
-                <ContentContainer>
-                    {contentElement}
-                </ContentContainer>
+				<ContentContainer>{contentElement}</ContentContainer>
 			</MainModal>
 		);
-	}
+	};
 }
 
 export default HomeContainer;
