@@ -5,6 +5,7 @@ import MainModal from './components/main-modal';
 import TabsContainer from './components/tabs-container';
 import IntroContent from './content/intro-content';
 import DefaultContent from './content/default-content';
+import AlphabetContent from './content/alphabet-content';
 
 const ContentContainer = styled.section`
 	width: 100%;
@@ -47,6 +48,8 @@ class HomeContainer extends React.Component {
 		switch (content) {
 			case 'intro':
 				return <IntroContent />;
+			case 'alphabet':
+				return <AlphabetContent />;
 			default:
 				return <DefaultContent />;
 		}
