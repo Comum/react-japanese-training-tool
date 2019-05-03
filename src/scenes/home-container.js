@@ -14,9 +14,8 @@ class HomeContainer extends React.Component {
 	state = {
 		tabs: [
 			{ id: 1, name: 'Intro', selected: true, contentName: 'intro' },
-			{ id: 2, name: 'Hiragana', selected: false, contentName: 'hiragana' },
-			{ id: 3, name: 'Katakana', selected: false, contentName: 'katakana' },
-			{ id: 4, name: 'Alphabet practice', selected: false, contentName: 'alphabet' },
+			{ id: 2, name: 'Alphabets', selected: false, contentName: 'alphabet' },
+			{ id: 4, name: 'Alphabet practice', selected: false, contentName: 'practice' },
 			{ id: 5, name: 'Vocabulary', selected: false, contentName: 'vocabulary' },
 			{ id: 6, name: 'Rules', selected: false, contentName: 'rules' },
 		],
