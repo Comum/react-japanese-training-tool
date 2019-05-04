@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import axios from 'axios';
 
 import TitleContainer from '../components/title-container';
 import Cell from '../components/cell';
@@ -9,16 +10,37 @@ import ListItem from '../components/list-item';
 const MainContainer = styled.div`
     width: 100%;
     height: 100%;
-
-    overflow-y: auto;
 `;
+
+const path = 'http://localhost:3001/characters';
 
 class AlphabetContent extends React.Component {
     state = {
-        characters: [
-            { id: 1, romaji: "a", hiragana: "あ", katakana: "ア" }
-        ]
+        characters: []
     }
+    signal = axios.CancelToken.source()
+
+    componentDidMount() {
+        this.loadJsonData(path);
+    }
+    
+    loadJsonData = async (path) => {
+        try {
+            this.setState({ isLoading: true });
+            const response = await axios.get(path, {
+                cancelToken: this.signal.token,
+            });
+            this.setState({ characters: response.data, isLoading: true });
+        } catch (err) {
+            if (axios.isCancel(err)) {
+                console.log('Error: ', err.message);
+            } else {
+                this.setState({ isLoading: false });
+            }
+        }
+    }
+    
+      
 
     getItems = () => {
         if (!this.state.characters.length) {
