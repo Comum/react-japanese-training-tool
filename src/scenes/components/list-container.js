@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Element = styled.ul`
     width: 100%;
-    height: calc(100% - 50px);
+    height: calc(100% - 100px);
 
     margin: 0;
     padding: 0;

@@ -6,6 +6,8 @@ import TitleContainer from '../components/title-container';
 import Cell from '../components/cell';
 import ListContainer from '../components/list-container';
 import ListItem from '../components/list-item';
+import ListItemHidden from '../components/list-item-hidden';
+import SearchCharacter from '../components/search-character';
 
 const MainContainer = styled.div`
     width: 100%;
@@ -39,21 +41,67 @@ class AlphabetContent extends React.Component {
             }
         }
     }
-    
-      
 
     getItems = () => {
         if (!this.state.characters.length) {
             return (<div />);
         }
 
-        return this.state.characters.map(char => (
-            <ListItem key={char.id}>
-                <Cell>{char.romaji}</Cell>
-                <Cell>{char.hiragana}</Cell>
-                <Cell>{char.katakana}</Cell>
-            </ListItem>
-        ));
+        return this.state.characters.map(char => {
+            if (char.visibility === false) {
+                return (
+                    <ListItemHidden key={char.id} />
+                )
+            }
+
+            return (
+                <ListItem key={char.id}>
+                    <Cell>{char.romaji}</Cell>
+                    <Cell>{char.hiragana}</Cell>
+                    <Cell>{char.katakana}</Cell>
+                </ListItem>
+            )
+        });
+    }
+
+    handleKeyPress = (e) => {
+        const searchValue = e.target.value;
+        const searchValues = searchValue.split('');
+        let newCharactersValues;
+        
+        if (!searchValues.length) {
+            newCharactersValues = this.state.characters.map(char => {
+                return {
+                    ...char,
+                    visibility: true
+                }
+            });
+        } else {
+            newCharactersValues = this.state.characters.map(char => {
+                let visibility = false;
+    
+                searchValues.forEach(value => {
+                    if (char.romaji.includes(value)) {
+                        visibility = true;
+                    }
+    
+                    if (char.hiragana === value) {
+                        visibility = true;
+                    }
+    
+                    if (char.katakana === value) {
+                        visibility = true;
+                    }
+                });
+    
+                return {
+                    ...char,
+                    visibility
+                }
+            });
+        }
+
+        this.setState({ characters: newCharactersValues });
     }
 
     render() {
@@ -61,6 +109,7 @@ class AlphabetContent extends React.Component {
 
         return (
             <MainContainer>
+                <SearchCharacter handleKeyPress={this.handleKeyPress} />
                 <TitleContainer>
                     <Cell>Romaji</Cell>
                     <Cell>Hiragana</Cell>
