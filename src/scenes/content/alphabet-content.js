@@ -1,18 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
 import axios from 'axios';
 
+import MainContainer from '../components/main-container';
 import TitleContainer from '../components/title-container';
 import Cell from '../components/cell';
 import ListContainer from '../components/list-container';
 import ListItem from '../components/list-item';
 import ListItemHidden from '../components/list-item-hidden';
 import SearchCharacter from '../components/search-character';
-
-const MainContainer = styled.div`
-	width: 100%;
-	height: 100%;
-`;
 
 const path = 'http://localhost:3001/characters';
 

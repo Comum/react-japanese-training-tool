@@ -1,5 +1,8 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const VocabularyContent = () => <div>I am the vocabulary content</div>;
+import MainContainer from '../components/main-container';
+
+const VocabularyContent = () => <MainContainer>I am the vocabulary content</MainContainer>;
 
 export default VocabularyContent;
