@@ -10,117 +10,143 @@ import ListItemHidden from '../components/list-item-hidden';
 import SearchCharacter from '../components/search-character';
 
 const MainContainer = styled.div`
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 `;
 
 const path = 'http://localhost:3001/characters';
 
 class AlphabetContent extends React.Component {
-    state = {
-        characters: []
-    }
-    signal = axios.CancelToken.source()
+	state = {
+		characters: [],
+		filterAll: true,
+	};
+	signal = axios.CancelToken.source();
 
-    componentDidMount() {
-        this.loadJsonData(path);
-    }
-    
-    loadJsonData = async (path) => {
-        try {
-            this.setState({ isLoading: true });
-            const response = await axios.get(path, {
-                cancelToken: this.signal.token,
-            });
-            this.setState({ characters: response.data, isLoading: true });
-        } catch (err) {
-            if (axios.isCancel(err)) {
-                console.log('Error: ', err.message);
-            } else {
-                this.setState({ isLoading: false });
-            }
-        }
-    }
+	componentDidMount() {
+		this.loadJsonData(path);
+	}
 
-    getItems = () => {
-        if (!this.state.characters.length) {
-            return (<div />);
-        }
+	loadJsonData = async path => {
+		try {
+			this.setState({ isLoading: true });
+			const response = await axios.get(path, {
+				cancelToken: this.signal.token,
+			});
+			this.setState({ characters: response.data, isLoading: true });
+		} catch (err) {
+			if (axios.isCancel(err)) {
+				console.log('Error: ', err.message);
+			} else {
+				this.setState({ isLoading: false });
+			}
+		}
+	};
 
-        return this.state.characters.map(char => {
-            if (char.visibility === false) {
-                return (
-                    <ListItemHidden key={char.id} />
-                )
-            }
+	getItems = () => {
+		if (!this.state.characters.length) {
+			return <div />;
+		}
 
-            return (
-                <ListItem key={char.id}>
-                    <Cell>{char.romaji}</Cell>
-                    <Cell>{char.hiragana}</Cell>
-                    <Cell>{char.katakana}</Cell>
-                </ListItem>
-            )
-        });
-    }
+		return this.state.characters.map(char => {
+			if (char.visibility === false) {
+				return <ListItemHidden key={char.id} />;
+			}
 
-    handleKeyPress = (e) => {
-        const searchValue = e.target.value;
-        const searchValues = searchValue.split('');
-        let newCharactersValues;
-        
-        if (!searchValues.length) {
-            newCharactersValues = this.state.characters.map(char => {
-                return {
-                    ...char,
-                    visibility: true
-                }
-            });
-        } else {
-            newCharactersValues = this.state.characters.map(char => {
-                let visibility = false;
-    
-                searchValues.forEach(value => {
-                    if (char.romaji.includes(value)) {
-                        visibility = true;
-                    }
-    
-                    if (char.hiragana === value) {
-                        visibility = true;
-                    }
-    
-                    if (char.katakana === value) {
-                        visibility = true;
-                    }
-                });
-    
-                return {
-                    ...char,
-                    visibility
-                }
-            });
-        }
+			return (
+				<ListItem key={char.id}>
+					<Cell>{char.romaji}</Cell>
+					<Cell>{char.hiragana}</Cell>
+					<Cell>{char.katakana}</Cell>
+				</ListItem>
+			);
+		});
+	};
 
-        this.setState({ characters: newCharactersValues });
-    }
+	handleKeyPress = e => {
+		const searchValue = e.target.value;
+		const searchValues = searchValue.split('');
+		let newCharactersValues;
 
-    render() {
-        const items = this.getItems();
+		if (!searchValues.length) {
+			newCharactersValues = this.state.characters.map(char => {
+				return {
+					...char,
+					visibility: true,
+				};
+			});
+		} else if (this.state.filterAll) {
+			newCharactersValues = this.state.characters.map(char => {
+				let visibility = false;
 
-        return (
-            <MainContainer>
-                <SearchCharacter handleKeyPress={this.handleKeyPress} />
-                <TitleContainer>
-                    <Cell>Romaji</Cell>
-                    <Cell>Hiragana</Cell>
-                    <Cell>Katakana</Cell>
-                </TitleContainer>
-                <ListContainer>
-                    {items}
-                </ListContainer>
-            </MainContainer>
-        )
-    }
+				searchValues.forEach(value => {
+					if (char.romaji.includes(value)) {
+						visibility = true;
+					}
+
+					if (char.hiragana === value) {
+						visibility = true;
+					}
+
+					if (char.katakana === value) {
+						visibility = true;
+					}
+				});
+
+				return {
+					...char,
+					visibility,
+				};
+			});
+		} else if (!this.state.filterAll) {
+			newCharactersValues = this.state.characters.map(char => {
+				let visibility = false;
+
+				if (char.romaji.includes(searchValue)) {
+					visibility = true;
+				}
+
+				if (char.hiragana === searchValue) {
+					visibility = true;
+				}
+
+				if (char.katakana === searchValue) {
+					visibility = true;
+				}
+
+				return {
+					...char,
+					visibility,
+				};
+			});
+		}
+
+		this.setState({ characters: newCharactersValues });
+	};
+
+	handleCheckboxClick = () => {
+		this.setState({ filterAll: !this.state.filterAll });
+	};
+
+	render() {
+		const items = this.getItems();
+
+		return (
+			<MainContainer>
+				<SearchCharacter
+					handleKeyPress={this.handleKeyPress}
+					showFilterButton={true}
+					handleCheckboxClick={this.handleCheckboxClick}
+				/>
+				<TitleContainer>
+					<Cell>Romaji</Cell>
+					<Cell>Hiragana</Cell>
+					<Cell>Katakana</Cell>
+				</TitleContainer>
+				<ListContainer>{items}</ListContainer>
+			</MainContainer>
+		);
+	}
 }
 
 export default AlphabetContent;
