@@ -6,6 +6,7 @@ import TabsContainer from './components/tabs-container';
 import IntroContent from './content/intro-content';
 import DefaultContent from './content/default-content';
 import AlphabetContent from './content/alphabet-content';
+import VocabularyContent from './content/vocabulary-content';
 
 const ContentContainer = styled.section`
 	width: 100%;
@@ -16,9 +17,9 @@ class HomeContainer extends React.Component {
 		tabs: [
 			{ id: 1, name: 'Intro', selected: true, contentName: 'intro' },
 			{ id: 2, name: 'Alphabets', selected: false, contentName: 'alphabet' },
+			{ id: 3, name: 'Vocabulary', selected: false, contentName: 'vocabulary' },
 			{ id: 4, name: 'Alphabet practice', selected: false, contentName: 'practice' },
-			{ id: 5, name: 'Vocabulary', selected: false, contentName: 'vocabulary' },
-			{ id: 6, name: 'Rules', selected: false, contentName: 'rules' },
+			{ id: 5, name: 'Rules', selected: false, contentName: 'rules' },
 		],
 		content: 'intro',
 	};
@@ -50,6 +51,8 @@ class HomeContainer extends React.Component {
 				return <IntroContent />;
 			case 'alphabet':
 				return <AlphabetContent />;
+			case 'vocabulary':
+				return <VocabularyContent />;
 			default:
 				return <DefaultContent />;
 		}
