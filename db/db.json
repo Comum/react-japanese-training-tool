@@ -132,7 +132,18 @@
 		{ "id": 10, "writing": "~じん", "meaning": "suffix for 'a national of'" },
 		{ "id": 11, "writing": "せんせい", "meaning": "teacher, instructor (not refering to job)" },
 		{ "id": 12, "writing": "きょうし", "meaning": "teacher" },
-		{ "id": 13, "writing": "がくせい", "meaning": "student" }
+		{ "id": 13, "writing": "がくせい", "meaning": "student" },
+		{ "id": 14, "writing": "かいしゃいん", "meaning": "company employee" },
+		{ "id": 15, "writing": "しゃいん", "meaning": "employee of" },
+		{ "id": 16, "writing": "ぎんこういん", "meaning": "bank employee" },
+		{ "id": 17, "writing": "いしゃ", "meaning": "medical doctor" },
+		{ "id": 18, "writing": "けんきゅうしゃ", "meaning": "resaearcher, scholar" },
+		{ "id": 19, "writing": "エンジニア", "meaning": "engineer" },
+		{ "id": 20, "writing": "だいがく", "meaning": "university" },
+		{ "id": 21, "writing": "びょういん", "meaning": "hospital" },
+		{ "id": 22, "writing": "でんき", "meaning": "electricity, light" },
+		{ "id": 23, "writing": "だれ", "meaning": "who" },
+		{ "id": 24, "writing": "どなた", "meaning": "[polite] who" }
 	],
 	"rules": [
 		{
