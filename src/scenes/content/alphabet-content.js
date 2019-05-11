@@ -7,7 +7,7 @@ import Cell from '../components/cell';
 import ListContainer from '../components/list-container';
 import ListItem from '../components/list-item';
 import ListItemHidden from '../components/list-item-hidden';
-import SearchCharacter from '../components/search-character';
+import SearchElement from '../components/search-element';
 
 const path = 'http://localhost:3001/characters';
 
@@ -128,7 +128,7 @@ class AlphabetContent extends React.Component {
 
 		return (
 			<MainContainer>
-				<SearchCharacter
+				<SearchElement
 					handleKeyPress={this.handleKeyPress}
 					showFilterButton={true}
 					handleCheckboxClick={this.handleCheckboxClick}

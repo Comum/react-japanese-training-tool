@@ -57,7 +57,7 @@ const FilterCheckoutContainer = styled.div`
 	flex-grow: 1;
 `;
 
-const SearchCharacter = props => (
+const SearchElement = props => (
 	<Element>
 		<Label>Search:</Label>
 		<InputContainer>
@@ -74,4 +74,4 @@ const SearchCharacter = props => (
 	</Element>
 );
 
-export default SearchCharacter;
+export default SearchElement;

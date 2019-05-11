@@ -119,6 +119,13 @@
 		{ "id": 116, "romaji": "ve", "hiragana": "", "katakana": "ヴェ", "visibility": true },
 		{ "id": 117, "romaji": "vo", "hiragana": "", "katakana": "ヴォ", "visibility": true }
 	],
+	"words": [
+		{ "id": 1, "writing": "わたし", "meaning": "I" },
+		{ "id": 2, "writing": "わたしたち", "meaning": "we" },
+		{ "id": 3, "writing": "あなた", "meaning": "you" },
+		{ "id": 4, "writing": "あのひと", "meaning": "that person, he, she" },
+		{ "id": 5, "writing": "あのかた", "meaning": "[polite] that person, he, she" }
+	],
 	"rules": [
 		{
 			"id": 1,
