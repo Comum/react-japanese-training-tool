@@ -124,7 +124,15 @@
 		{ "id": 2, "writing": "わたしたち", "meaning": "we" },
 		{ "id": 3, "writing": "あなた", "meaning": "you" },
 		{ "id": 4, "writing": "あのひと", "meaning": "that person, he, she" },
-		{ "id": 5, "writing": "あのかた", "meaning": "[polite] that person, he, she" }
+		{ "id": 5, "writing": "あのかた", "meaning": "[polite] that person, he, she" },
+		{ "id": 6, "writing": "みなさん", "meaning": "ladies and gentlemen, all of you" },
+		{ "id": 7, "writing": "~さん", "meaning": "Mr, Mrs" },
+		{ "id": 8, "writing": "~ちゃん", "meaning": "suffix added to a child girl name" },
+		{ "id": 9, "writing": "~くん", "meaning": "suffix added to a child boy name" },
+		{ "id": 10, "writing": "~じん", "meaning": "suffix for 'a national of'" },
+		{ "id": 11, "writing": "せんせい", "meaning": "teacher, instructor (not refering to job)" },
+		{ "id": 12, "writing": "きょうし", "meaning": "teacher" },
+		{ "id": 13, "writing": "がくせい", "meaning": "student" }
 	],
 	"rules": [
 		{
