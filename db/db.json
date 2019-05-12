@@ -227,9 +227,14 @@
 		{ "id": 60, "writing": "てちょう", "romaji": ["techoo", "techō"], "meaning": "pocket notebook" },
 		{ "id": 61, "writing": "めいし", "romaji": ["meishi"], "meaning": "business card" },
 		{ "id": 62, "writing": "カード", "romaji": ["kaado", "kādo"], "meaning": "card" },
-		{ "id": 63, "writing": "テレホンカード", "romaji": [""], "meaning": "telephone card" },
-		{ "id": 64, "writing": "えんぴつ", "romaji": [""], "meaning": "pencil" },
-		{ "id": 65, "writing": "ボールぺン", "romaji": [""], "meaning": "ballpoint pen" },
+		{
+			"id": 63,
+			"writing": "テレホンカード",
+			"romaji": ["terehonkaado", "terehonkādo"],
+			"meaning": "telephone card"
+		},
+		{ "id": 64, "writing": "えんぴつ", "romaji": ["enpitsu"], "meaning": "pencil" },
+		{ "id": 65, "writing": "ボールぺン", "romaji": ["boorupen", "bōrupen"], "meaning": "ballpoint pen" },
 		{ "id": 66, "writing": "シャープぺンシル", "romaji": [""], "meaning": "ballpoint pen" },
 		{ "id": 67, "writing": "かぎ", "romaji": [""], "meaning": "key" },
 		{ "id": 68, "writing": "とけい", "romaji": [""], "meaning": "watch, clock" },
