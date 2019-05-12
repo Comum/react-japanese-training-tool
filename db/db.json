@@ -173,7 +173,23 @@
 		{ "id": 51, "writing": "あれ", "meaning": "that (thing over there)" },
 		{ "id": 52, "writing": "この~", "meaning": "this ~, this ~ here" },
 		{ "id": 53, "writing": "その~", "meaning": "that ~, that ~ near you" },
-		{ "id": 54, "writing": "あの~", "meaning": "that ~, that ~ over there" }
+		{ "id": 54, "writing": "あの~", "meaning": "that ~, that ~ over there" },
+		{ "id": 55, "writing": "ほん", "meaning": "book" },
+		{ "id": 56, "writing": "じしょ", "meaning": "dictionary" },
+		{ "id": 57, "writing": "ざっし", "meaning": "magazine" },
+		{ "id": 58, "writing": "しんぶん", "meaning": "newspaper" },
+		{ "id": 59, "writing": "ノート", "meaning": "notebook" },
+		{ "id": 60, "writing": "てちょう", "meaning": "pocket notebook" },
+		{ "id": 61, "writing": "めいし", "meaning": "business card" },
+		{ "id": 62, "writing": "カード", "meaning": "card" },
+		{ "id": 63, "writing": "テレホンカード", "meaning": "telephone card" },
+		{ "id": 64, "writing": "えんぴつ", "meaning": "pencil" },
+		{ "id": 65, "writing": "ボールぺン", "meaning": "ballpoint pen" },
+		{ "id": 66, "writing": "シャープぺンシル", "meaning": "ballpoint pen" },
+		{ "id": 67, "writing": "かぎ", "meaning": "key" },
+		{ "id": 68, "writing": "とけい", "meaning": "watch, clock" },
+		{ "id": 69, "writing": "かさ", "meaning": "umbrella" },
+		{ "id": 70, "writing": "かばん", "meaning": "bag, briefcase" }
 	],
 	"rules": [
 		{
