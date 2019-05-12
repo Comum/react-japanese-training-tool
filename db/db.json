@@ -189,7 +189,36 @@
 		{ "id": 67, "writing": "かぎ", "meaning": "key" },
 		{ "id": 68, "writing": "とけい", "meaning": "watch, clock" },
 		{ "id": 69, "writing": "かさ", "meaning": "umbrella" },
-		{ "id": 70, "writing": "かばん", "meaning": "bag, briefcase" }
+		{ "id": 70, "writing": "かばん", "meaning": "bag, briefcase" },
+		{ "id": 71, "writing": "[カセット]テープ", "meaning": "[casstte] tape" },
+		{ "id": 72, "writing": "テープレコーダー", "meaning": "tape recorder" },
+		{ "id": 73, "writing": "テレビ", "meaning": "tape recorder" },
+		{ "id": 74, "writing": "ラジオ", "meaning": "radio" },
+		{ "id": 75, "writing": "カメラ", "meaning": "camera" },
+		{ "id": 76, "writing": "コンピューター", "meaning": "computer" },
+		{ "id": 77, "writing": "じどうしゃ", "meaning": "automobile, car" },
+		{ "id": 78, "writing": "つくえ", "meaning": "desk" },
+		{ "id": 79, "writing": "いす", "meaning": "chair" },
+		{ "id": 80, "writing": "チョコレート", "meaning": "chocolate" },
+		{ "id": 81, "writing": "コーヒー", "meaning": "coffee" },
+		{ "id": 82, "writing": "えいご", "meaning": "the English language" },
+		{ "id": 83, "writing": "にほんご", "meaning": "the Japanese language" },
+		{ "id": 84, "writing": "~ご", "meaning": "the ~ language" },
+		{ "id": 85, "writing": "なん", "meaning": "what" },
+		{ "id": 86, "writing": "そう", "meaning": "so" },
+		{ "id": 87, "writing": "ちがいます", "meaning": "No, it isn't/You are wrong" },
+		{ "id": 88, "writing": "そうですか", "meaning": "I see/Is that so?" },
+		{ "id": 89, "writing": "あのう", "meaning": "well (used to show hesitation)" },
+		{ "id": 90, "writing": "ほんのきもちです", "meaning": "I see/Is that so?" },
+		{ "id": 91, "writing": "どうぞ", "meaning": "Please/Here you are" },
+		{ "id": 92, "writing": "どうも", "meaning": "Well, thanks" },
+		{ "id": 93, "writing": "[どうも]ありがとう[ございます]", "meaning": "Thank you [very much]" },
+		{ "id": 94, "writing": "これからおせわになります", "meaning": "I hope for your kind assintance hereafter" },
+		{
+			"id": 95,
+			"writing": "こちらこそよろしく",
+			"meaning": "I am pleased to meet you (response to どうぞよろしく)"
+		}
 	],
 	"rules": [
 		{
