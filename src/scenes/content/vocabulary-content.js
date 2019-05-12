@@ -13,7 +13,7 @@ const path = 'http://localhost:3001/words';
 
 class VocabularyContent extends React.Component {
 	state = {
-		characters: [],
+		words: [],
 		filterAll: true,
 	};
 	signal = axios.CancelToken.source();
@@ -28,7 +28,7 @@ class VocabularyContent extends React.Component {
 			const response = await axios.get(path, {
 				cancelToken: this.signal.token,
 			});
-			this.setState({ characters: response.data, isLoading: true });
+			this.setState({ words: response.data, isLoading: true });
 		} catch (err) {
 			if (axios.isCancel(err)) {
 				console.log('Error: ', err.message);
@@ -38,12 +38,43 @@ class VocabularyContent extends React.Component {
 		}
 	};
 
+	handleKeyPress = e => {
+		const searchWord = e.target.value;
+		let newWordsValues;
+
+		if (searchWord.length) {
+			newWordsValues = this.state.words.map(word => {
+				let visibility = false;
+
+				word.romaji.forEach(wordWay => {
+					if (wordWay.includes(searchWord)) {
+						visibility = true;
+					}
+				});
+
+				return {
+					...word,
+					visibility,
+				};
+			});
+		} else {
+			newWordsValues = this.state.words.map(word => {
+				return {
+					...word,
+					visibility: true,
+				};
+			});
+		}
+
+		this.setState({ words: newWordsValues });
+	};
+
 	getItems = () => {
-		if (!this.state.characters.length) {
+		if (!this.state.words.length) {
 			return <div />;
 		}
 
-		return this.state.characters.map(word => {
+		return this.state.words.map(word => {
 			if (word.visibility === false) {
 				return <ListItemHidden key={word.id} />;
 			}
@@ -61,7 +92,7 @@ class VocabularyContent extends React.Component {
 
 		return (
 			<MainContainer>
-				<SearchElement />
+				<SearchElement handleKeyPress={this.handleKeyPress} />
 				<TitleContainer>
 					<Cell>Word</Cell>
 					<Cell>Meaning</Cell>

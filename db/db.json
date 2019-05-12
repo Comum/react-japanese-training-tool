@@ -120,185 +120,334 @@
 		{ "id": 117, "romaji": "vo", "hiragana": "", "katakana": "ヴォ", "visibility": true }
 	],
 	"words": [
-		{ "id": 1, "writing": "わたし", "romaji": ["watashi"], "meaning": "I" },
-		{ "id": 2, "writing": "わたしたち", "romaji": ["watashitachi"], "meaning": "we" },
-		{ "id": 3, "writing": "あなた", "romaji": ["anata"], "meaning": "you" },
-		{ "id": 4, "writing": "あのひと", "romaji": ["anohito"], "meaning": "that person, he, she" },
-		{ "id": 5, "writing": "あのかた", "romaji": ["anokata"], "meaning": "[polite] that person, he, she" },
-		{ "id": 6, "writing": "みなさん", "romaji": ["minasan"], "meaning": "ladies and gentlemen, all of you" },
-		{ "id": 7, "writing": "~さん", "romaji": ["san"], "meaning": "Mr, Mrs" },
-		{ "id": 8, "writing": "~ちゃん", "romaji": ["chan"], "meaning": "suffix added to a child girl name" },
-		{ "id": 9, "writing": "~くん", "romaji": ["kun"], "meaning": "suffix added to a child boy name" },
-		{ "id": 10, "writing": "~じん", "romaji": ["jin"], "meaning": "suffix for 'a national of'" },
+		{ "id": 1, "writing": "わたし", "romaji": ["watashi"], "meaning": "I", "visibility": true },
+		{ "id": 2, "writing": "わたしたち", "romaji": ["watashitachi"], "meaning": "we", "visibility": true },
+		{ "id": 3, "writing": "あなた", "romaji": ["anata"], "meaning": "you", "visibility": true },
+		{
+			"id": 4,
+			"writing": "あのひと",
+			"romaji": ["anohito"],
+			"meaning": "that person, he, she",
+			"visibility": true
+		},
+		{
+			"id": 5,
+			"writing": "あのかた",
+			"romaji": ["anokata"],
+			"meaning": "[polite] that person, he, she",
+			"visibility": true
+		},
+		{
+			"id": 6,
+			"writing": "みなさん",
+			"romaji": ["minasan"],
+			"meaning": "ladies and gentlemen, all of you",
+			"visibility": true
+		},
+		{ "id": 7, "writing": "~さん", "romaji": ["san"], "meaning": "Mr, Mrs", "visibility": true },
+		{
+			"id": 8,
+			"writing": "~ちゃん",
+			"romaji": ["chan"],
+			"meaning": "suffix added to a child girl name",
+			"visibility": true
+		},
+		{
+			"id": 9,
+			"writing": "~くん",
+			"romaji": ["kun"],
+			"meaning": "suffix added to a child boy name",
+			"visibility": true
+		},
+		{
+			"id": 10,
+			"writing": "~じん",
+			"romaji": ["jin"],
+			"meaning": "suffix for 'a national of'",
+			"visibility": true
+		},
 		{
 			"id": 11,
 			"writing": "せんせい",
 			"romaji": ["sensei"],
-			"meaning": "teacher, instructor (not refering to job)"
+			"meaning": "teacher, instructor (not refering to job)",
+			"visibility": true
 		},
-		{ "id": 12, "writing": "きょうし", "romaji": ["kyooshi", "kyo oshi"], "meaning": "teacher" },
-		{ "id": 13, "writing": "がくせい", "romaji": ["gakusei"], "meaning": "student" },
-		{ "id": 14, "writing": "かいしゃいん", "romaji": ["kaishain"], "meaning": "company employee" },
-		{ "id": 15, "writing": "しゃいん", "romaji": ["shain"], "meaning": "employee of" },
-		{ "id": 16, "writing": "ぎんこういん", "romaji": [""], "meaning": "bank employee" },
-		{ "id": 17, "writing": "いしゃ", "romaji": ["isha"], "meaning": "medical doctor" },
-		{ "id": 18, "writing": "けんきゅうしゃ", "romaji": ["kenkyuusha"], "meaning": "resaearcher, scholar" },
-		{ "id": 19, "writing": "エンジニア", "romaji": ["enjinia"], "meaning": "engineer" },
-		{ "id": 20, "writing": "だいがく", "romaji": ["daigaku"], "meaning": "university" },
-		{ "id": 21, "writing": "びょういん", "romaji": ["byooin", "byōin"], "meaning": "hospital" },
-		{ "id": 22, "writing": "でんき", "romaji": ["denki"], "meaning": "electricity, light" },
-		{ "id": 23, "writing": "だれ", "romaji": ["dare"], "meaning": "who" },
-		{ "id": 24, "writing": "どなた", "romaji": ["donata"], "meaning": "[polite] who" },
-		{ "id": 25, "writing": "~さい", "romaji": ["sai"], "meaning": "~ years old" },
-		{ "id": 26, "writing": "なんさい", "romaji": ["nansai"], "meaning": "how old" },
-		{ "id": 27, "writing": "おいくつ", "romaji": ["oikutsu", "o ikutsu"], "meaning": "[polite] how old" },
-		{ "id": 28, "writing": "はい", "romaji": ["hai"], "meaning": "yes" },
-		{ "id": 29, "writing": "いいえ", "romaji": ["iie", "īe"], "meaning": "no" },
+		{
+			"id": 12,
+			"writing": "きょうし",
+			"romaji": ["kyooshi", "kyo oshi"],
+			"meaning": "teacher",
+			"visibility": true
+		},
+		{ "id": 13, "writing": "がくせい", "romaji": ["gakusei"], "meaning": "student", "visibility": true },
+		{
+			"id": 14,
+			"writing": "かいしゃいん",
+			"romaji": ["kaishain"],
+			"meaning": "company employee",
+			"visibility": true
+		},
+		{ "id": 15, "writing": "しゃいん", "romaji": ["shain"], "meaning": "employee of", "visibility": true },
+		{ "id": 16, "writing": "ぎんこういん", "romaji": [""], "meaning": "bank employee", "visibility": true },
+		{ "id": 17, "writing": "いしゃ", "romaji": ["isha"], "meaning": "medical doctor", "visibility": true },
+		{
+			"id": 18,
+			"writing": "けんきゅうしゃ",
+			"romaji": ["kenkyuusha"],
+			"meaning": "resaearcher, scholar",
+			"visibility": true
+		},
+		{ "id": 19, "writing": "エンジニア", "romaji": ["enjinia"], "meaning": "engineer", "visibility": true },
+		{ "id": 20, "writing": "だいがく", "romaji": ["daigaku"], "meaning": "university", "visibility": true },
+		{ "id": 21, "writing": "びょういん", "romaji": ["byooin", "byōin"], "meaning": "hospital", "visibility": true },
+		{ "id": 22, "writing": "でんき", "romaji": ["denki"], "meaning": "electricity, light", "visibility": true },
+		{ "id": 23, "writing": "だれ", "romaji": ["dare"], "meaning": "who", "visibility": true },
+		{ "id": 24, "writing": "どなた", "romaji": ["donata"], "meaning": "[polite] who", "visibility": true },
+		{ "id": 25, "writing": "~さい", "romaji": ["sai"], "meaning": "~ years old", "visibility": true },
+		{ "id": 26, "writing": "なんさい", "romaji": ["nansai"], "meaning": "how old", "visibility": true },
+		{
+			"id": 27,
+			"writing": "おいくつ",
+			"romaji": ["oikutsu", "o ikutsu"],
+			"meaning": "[polite] how old",
+			"visibility": true
+		},
+		{ "id": 28, "writing": "はい", "romaji": ["hai"], "meaning": "yes", "visibility": true },
+		{ "id": 29, "writing": "いいえ", "romaji": ["iie", "īe"], "meaning": "no", "visibility": true },
 		{
 			"id": 30,
 			"writing": "しつれいですか",
 			"romaji": ["shitsureidesuka", "shitsureidesu ka"],
-			"meaning": "excuse me, but"
+			"meaning": "excuse me, but",
+			"visibility": true
 		},
 		{
 			"id": 31,
 			"writing": "おなまえは",
 			"romaji": ["onamaeha", "o na ma e wa"],
-			"meaning": "may I have your name"
+			"meaning": "may I have your name",
+			"visibility": true
 		},
 		{
 			"id": 32,
 			"writing": "はじめまして",
 			"romaji": ["hajimemashite"],
-			"meaning": "how do you do (meeting for the first time)"
+			"meaning": "how do you do (meeting for the first time)",
+			"visibility": true
 		},
 		{
 			"id": 33,
 			"writing": "とうぞよろしく [おねがいします]",
 			"romaji": ["doozoyoroku onegaishimasu", "dōzo yoroshiku onegaishimasu"],
-			"meaning": "pleased to meet you"
+			"meaning": "pleased to meet you",
+			"visibility": true
 		},
 		{
 			"id": 34,
 			"writing": "こちらは~さんです",
 			"romaji": ["kochiraha~sandesu", "kochira wa ~-sandesu"],
-			"meaning": "this is Mr/Ms ~"
+			"meaning": "this is Mr/Ms ~",
+			"visibility": true
 		},
 		{
 			"id": 35,
 			"writing": "~からきました",
 			"romaji": ["~karakimashita", "kara kimashita"],
-			"meaning": "I came / come from ~"
+			"meaning": "I came / come from ~",
+			"visibility": true
 		},
-		{ "id": 36, "writing": "アメリカ", "romaji": ["amerika"], "meaning": "U.S.A." },
-		{ "id": 37, "writing": "イギリス", "romaji": ["igirisu"], "meaning": "U.K." },
-		{ "id": 38, "writing": "インド", "romaji": ["indo"], "meaning": "India" },
-		{ "id": 39, "writing": "インドネシア", "romaji": ["indoneshia"], "meaning": "Indonesia" },
-		{ "id": 40, "writing": "かんこく", "romaji": ["kankoku"], "meaning": "North Korea" },
-		{ "id": 41, "writing": "タイ", "romaji": ["tai"], "meaning": "Thailand" },
-		{ "id": 42, "writing": "ちゅうごく", "romaji": ["chuugoku", "chūgoku"], "meaning": "China" },
-		{ "id": 43, "writing": "ドイツ", "romaji": ["doitsu"], "meaning": "Germany" },
-		{ "id": 44, "writing": "にほん", "romaji": ["nihon"], "meaning": "Japan" },
-		{ "id": 45, "writing": "フランス", "romaji": ["furansu"], "meaning": "France" },
-		{ "id": 46, "writing": "ブラジル", "romaji": ["burajiru"], "meaning": "Brazil" },
+		{ "id": 36, "writing": "アメリカ", "romaji": ["amerika"], "meaning": "U.S.A.", "visibility": true },
+		{ "id": 37, "writing": "イギリス", "romaji": ["igirisu"], "meaning": "U.K.", "visibility": true },
+		{ "id": 38, "writing": "インド", "romaji": ["indo"], "meaning": "India", "visibility": true },
+		{ "id": 39, "writing": "インドネシア", "romaji": ["indoneshia"], "meaning": "Indonesia", "visibility": true },
+		{ "id": 40, "writing": "かんこく", "romaji": ["kankoku"], "meaning": "North Korea", "visibility": true },
+		{ "id": 41, "writing": "タイ", "romaji": ["tai"], "meaning": "Thailand", "visibility": true },
+		{
+			"id": 42,
+			"writing": "ちゅうごく",
+			"romaji": ["chuugoku", "chūgoku"],
+			"meaning": "China",
+			"visibility": true
+		},
+		{ "id": 43, "writing": "ドイツ", "romaji": ["doitsu"], "meaning": "Germany", "visibility": true },
+		{ "id": 44, "writing": "にほん", "romaji": ["nihon"], "meaning": "Japan", "visibility": true },
+		{ "id": 45, "writing": "フランス", "romaji": ["furansu"], "meaning": "France", "visibility": true },
+		{ "id": 46, "writing": "ブラジル", "romaji": ["burajiru"], "meaning": "Brazil", "visibility": true },
 		{
 			"id": 47,
 			"writing": "さくらだいがく",
 			"romaji": ["sakuradaigaku", "sakura daigaku"],
-			"meaning": "fictitious university"
+			"meaning": "fictitious university",
+			"visibility": true
 		},
 		{
 			"id": 48,
 			"writing": "パワーてんき/ブラジルイヤー",
 			"romaji": ["pawaatenki/burajiruiyaa", "pawā tenki/burajiruiyā"],
-			"meaning": "fictitious companies"
+			"meaning": "fictitious companies",
+			"visibility": true
 		},
-		{ "id": 49, "writing": "これ", "romaji": ["kore"], "meaning": "this (thing here)" },
-		{ "id": 50, "writing": "それ", "romaji": ["sore"], "meaning": "that (thing near you)" },
-		{ "id": 51, "writing": "あれ", "romaji": ["are"], "meaning": "that (thing over there)" },
-		{ "id": 52, "writing": "この~", "romaji": ["kono~"], "meaning": "this ~, this ~ here" },
-		{ "id": 53, "writing": "その~", "romaji": ["sono~"], "meaning": "that ~, that ~ near you" },
-		{ "id": 54, "writing": "あの~", "romaji": ["ano~"], "meaning": "that ~, that ~ over there" },
-		{ "id": 55, "writing": "ほん", "romaji": ["hon"], "meaning": "book" },
-		{ "id": 56, "writing": "じしょ", "romaji": ["jisho"], "meaning": "dictionary" },
-		{ "id": 57, "writing": "ざっし", "romaji": ["zasshi"], "meaning": "magazine" },
-		{ "id": 58, "writing": "しんぶん", "romaji": ["shinbun"], "meaning": "newspaper" },
-		{ "id": 59, "writing": "ノート", "romaji": ["nooto", "nōto"], "meaning": "notebook" },
-		{ "id": 60, "writing": "てちょう", "romaji": ["techoo", "techō"], "meaning": "pocket notebook" },
-		{ "id": 61, "writing": "めいし", "romaji": ["meishi"], "meaning": "business card" },
-		{ "id": 62, "writing": "カード", "romaji": ["kaado", "kādo"], "meaning": "card" },
+		{ "id": 49, "writing": "これ", "romaji": ["kore"], "meaning": "this (thing here)", "visibility": true },
+		{ "id": 50, "writing": "それ", "romaji": ["sore"], "meaning": "that (thing near you)", "visibility": true },
+		{ "id": 51, "writing": "あれ", "romaji": ["are"], "meaning": "that (thing over there)", "visibility": true },
+		{ "id": 52, "writing": "この~", "romaji": ["kono~"], "meaning": "this ~, this ~ here", "visibility": true },
+		{ "id": 53, "writing": "その~", "romaji": ["sono~"], "meaning": "that ~, that ~ near you", "visibility": true },
+		{
+			"id": 54,
+			"writing": "あの~",
+			"romaji": ["ano~"],
+			"meaning": "that ~, that ~ over there",
+			"visibility": true
+		},
+		{ "id": 55, "writing": "ほん", "romaji": ["hon"], "meaning": "book", "visibility": true },
+		{ "id": 56, "writing": "じしょ", "romaji": ["jisho"], "meaning": "dictionary", "visibility": true },
+		{ "id": 57, "writing": "ざっし", "romaji": ["zasshi"], "meaning": "magazine", "visibility": true },
+		{ "id": 58, "writing": "しんぶん", "romaji": ["shinbun"], "meaning": "newspaper", "visibility": true },
+		{ "id": 59, "writing": "ノート", "romaji": ["nooto", "nōto"], "meaning": "notebook", "visibility": true },
+		{
+			"id": 60,
+			"writing": "てちょう",
+			"romaji": ["techoo", "techō"],
+			"meaning": "pocket notebook",
+			"visibility": true
+		},
+		{ "id": 61, "writing": "めいし", "romaji": ["meishi"], "meaning": "business card", "visibility": true },
+		{ "id": 62, "writing": "カード", "romaji": ["kaado", "kādo"], "meaning": "card", "visibility": true },
 		{
 			"id": 63,
 			"writing": "テレホンカード",
 			"romaji": ["terehonkaado", "terehonkādo"],
-			"meaning": "telephone card"
+			"meaning": "telephone card",
+			"visibility": true
 		},
-		{ "id": 64, "writing": "えんぴつ", "romaji": ["enpitsu"], "meaning": "pencil" },
-		{ "id": 65, "writing": "ボールぺン", "romaji": ["boorupen", "bōrupen"], "meaning": "ballpoint pen" },
+		{ "id": 64, "writing": "えんぴつ", "romaji": ["enpitsu"], "meaning": "pencil", "visibility": true },
+		{
+			"id": 65,
+			"writing": "ボールぺン",
+			"romaji": ["boorupen", "bōrupen"],
+			"meaning": "ballpoint pen",
+			"visibility": true
+		},
 		{
 			"id": 66,
 			"writing": "シャープぺンシル",
 			"romaji": ["shaapupenshiru", "shāpupenshiru"],
-			"meaning": "ballpoint pen"
+			"meaning": "ballpoint pen",
+			"visibility": true
 		},
-		{ "id": 67, "writing": "かぎ", "romaji": ["kagi"], "meaning": "key" },
-		{ "id": 68, "writing": "とけい", "romaji": ["tokei"], "meaning": "watch, clock" },
-		{ "id": 69, "writing": "かさ", "romaji": ["kasa"], "meaning": "umbrella" },
-		{ "id": 70, "writing": "かばん", "romaji": ["kaban"], "meaning": "bag, briefcase" },
+		{ "id": 67, "writing": "かぎ", "romaji": ["kagi"], "meaning": "key", "visibility": true },
+		{ "id": 68, "writing": "とけい", "romaji": ["tokei"], "meaning": "watch, clock", "visibility": true },
+		{ "id": 69, "writing": "かさ", "romaji": ["kasa"], "meaning": "umbrella", "visibility": true },
+		{ "id": 70, "writing": "かばん", "romaji": ["kaban"], "meaning": "bag, briefcase", "visibility": true },
 		{
 			"id": 71,
 			"writing": "[カセット]テープ",
 			"romaji": ["kasetto teepo", "kasettotēpu"],
-			"meaning": "[casstte] tape"
+			"meaning": "[casstte] tape",
+			"visibility": true
 		},
 		{
 			"id": 72,
 			"writing": "テープレコーダー",
 			"romaji": ["teeporekoodaa", "tēpurekōdā"],
-			"meaning": "tape recorder"
+			"meaning": "tape recorder",
+			"visibility": true
 		},
-		{ "id": 73, "writing": "テレビ", "romaji": ["terebi"], "meaning": "television" },
-		{ "id": 74, "writing": "ラジオ", "romaji": ["rajio"], "meaning": "radio" },
-		{ "id": 75, "writing": "カメラ", "romaji": ["kamera"], "meaning": "camera" },
-		{ "id": 76, "writing": "コンピューター", "romaji": ["konpyuutaa", "konpyūtā"], "meaning": "computer" },
-		{ "id": 77, "writing": "じどうしゃ", "romaji": ["jidoosha", "jidōsha"], "meaning": "automobile, car" },
-		{ "id": 78, "writing": "つくえ", "romaji": ["tsukue"], "meaning": "desk" },
-		{ "id": 79, "writing": "いす", "romaji": ["isu"], "meaning": "chair" },
-		{ "id": 80, "writing": "チョコレート", "romaji": ["chokoreeto", "chokorēto"], "meaning": "chocolate" },
-		{ "id": 81, "writing": "コーヒー", "romaji": ["koohii", "kōhī"], "meaning": "coffee" },
-		{ "id": 82, "writing": "えいご", "romaji": ["eigo"], "meaning": "the English language" },
-		{ "id": 83, "writing": "にほんご", "romaji": ["nihongo"], "meaning": "the Japanese language" },
-		{ "id": 84, "writing": "~ご", "romaji": ["~go"], "meaning": "the ~ language" },
-		{ "id": 85, "writing": "なん", "romaji": ["nan"], "meaning": "what" },
-		{ "id": 86, "writing": "そう", "romaji": ["soo", "sō"], "meaning": "so" },
-		{ "id": 87, "writing": "ちがいます", "romaji": ["chigaimase"], "meaning": "No, it isn't/You are wrong" },
-		{ "id": 88, "writing": "そうですか", "romaji": ["soodesuka", "sōdesu ka"], "meaning": "I see/Is that so?" },
-		{ "id": 89, "writing": "あのう", "romaji": ["anoo", "anou"], "meaning": "well (used to show hesitation)" },
+		{ "id": 73, "writing": "テレビ", "romaji": ["terebi"], "meaning": "television", "visibility": true },
+		{ "id": 74, "writing": "ラジオ", "romaji": ["rajio"], "meaning": "radio", "visibility": true },
+		{ "id": 75, "writing": "カメラ", "romaji": ["kamera"], "meaning": "camera", "visibility": true },
+		{
+			"id": 76,
+			"writing": "コンピューター",
+			"romaji": ["konpyuutaa", "konpyūtā"],
+			"meaning": "computer",
+			"visibility": true
+		},
+		{
+			"id": 77,
+			"writing": "じどうしゃ",
+			"romaji": ["jidoosha", "jidōsha"],
+			"meaning": "automobile, car",
+			"visibility": true
+		},
+		{ "id": 78, "writing": "つくえ", "romaji": ["tsukue"], "meaning": "desk", "visibility": true },
+		{ "id": 79, "writing": "いす", "romaji": ["isu"], "meaning": "chair", "visibility": true },
+		{
+			"id": 80,
+			"writing": "チョコレート",
+			"romaji": ["chokoreeto", "chokorēto"],
+			"meaning": "chocolate",
+			"visibility": true
+		},
+		{ "id": 81, "writing": "コーヒー", "romaji": ["koohii", "kōhī"], "meaning": "coffee", "visibility": true },
+		{ "id": 82, "writing": "えいご", "romaji": ["eigo"], "meaning": "the English language", "visibility": true },
+		{
+			"id": 83,
+			"writing": "にほんご",
+			"romaji": ["nihongo"],
+			"meaning": "the Japanese language",
+			"visibility": true
+		},
+		{ "id": 84, "writing": "~ご", "romaji": ["~go"], "meaning": "the ~ language", "visibility": true },
+		{ "id": 85, "writing": "なん", "romaji": ["nan"], "meaning": "what", "visibility": true },
+		{ "id": 86, "writing": "そう", "romaji": ["soo", "sō"], "meaning": "so", "visibility": true },
+		{
+			"id": 87,
+			"writing": "ちがいます",
+			"romaji": ["chigaimase"],
+			"meaning": "No, it isn't/You are wrong",
+			"visibility": true
+		},
+		{
+			"id": 88,
+			"writing": "そうですか",
+			"romaji": ["soodesuka", "sōdesu ka"],
+			"meaning": "I see/Is that so?",
+			"visibility": true
+		},
+		{
+			"id": 89,
+			"writing": "あのう",
+			"romaji": ["anoo", "anou"],
+			"meaning": "well (used to show hesitation)",
+			"visibility": true
+		},
 		{
 			"id": 90,
 			"writing": "ほんのきもちです",
 			"romaji": ["honnokimochidesu", "hon'nokimochidesu"],
-			"meaning": "I see/Is that so?"
+			"meaning": "I see/Is that so?",
+			"visibility": true
 		},
-		{ "id": 91, "writing": "どうぞ", "romaji": ["doozo", "dōzo"], "meaning": "Please/Here you are" },
-		{ "id": 92, "writing": "どうも", "romaji": ["doomo", "dōmo"], "meaning": "Well, thanks" },
+		{
+			"id": 91,
+			"writing": "どうぞ",
+			"romaji": ["doozo", "dōzo"],
+			"meaning": "Please/Here you are",
+			"visibility": true
+		},
+		{ "id": 92, "writing": "どうも", "romaji": ["doomo", "dōmo"], "meaning": "Well, thanks", "visibility": true },
 		{
 			"id": 93,
 			"writing": "[どうも]ありがとう[ございます]",
 			"romaji": ["doomoarigatoogodaimasu", "dōmo arigatōgozaimasu"],
-			"meaning": "Thank you [very much]"
+			"meaning": "Thank you [very much]",
+			"visibility": true
 		},
 		{
 			"id": 94,
 			"writing": "これからおせわになります",
 			"romaji": ["korekaraosewaninarimasu", "korekara osewaninarimasu"],
-			"meaning": "I hope for your kind assintance hereafter"
+			"meaning": "I hope for your kind assintance hereafter",
+			"visibility": true
 		},
 		{
 			"id": 95,
 			"writing": "こちらこそよろしく",
 			"romaji": ["kochirakosoyoroshiku", "kochira koso yoroshiku"],
-			"meaning": "I am pleased to meet you (response to どうぞよろしく)"
+			"meaning": "I am pleased to meet you (response to どうぞよろしく)",
+			"visibility": true
 		}
 	],
 	"rules": [
