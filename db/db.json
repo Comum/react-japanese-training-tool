@@ -448,6 +448,83 @@
 			"romaji": ["kochirakosoyoroshiku", "kochira koso yoroshiku"],
 			"meaning": "I am pleased to meet you (response to どうぞよろしく)",
 			"visibility": true
+		},
+		{
+			"id": 96,
+			"writing": "ここ",
+			"romaji": ["koko"],
+			"meaning": "here, this place",
+			"visibility": true
+		},
+		{
+			"id": 97,
+			"writing": "そこ",
+			"romaji": ["soko"],
+			"meaning": "there, that place near you",
+			"visibility": true
+		},
+		{
+			"id": 98,
+			"writing": "あそこ",
+			"romaji": ["asoko"],
+			"meaning": "that place over there",
+			"visibility": true
+		},
+		{
+			"id": 99,
+			"writing": "どこ",
+			"romaji": ["doko"],
+			"meaning": "where, what place",
+			"visibility": true
+		},
+		{
+			"id": 100,
+			"writing": "こちら",
+			"romaji": ["kochira"],
+			"meaning": "this way, this place ([polite] ここ)",
+			"visibility": true
+		},
+		{
+			"id": 101,
+			"writing": "そちら",
+			"romaji": ["sochira"],
+			"meaning": "that way, that place near you ([polite] そこ)",
+			"visibility": true
+		},
+		{
+			"id": 102,
+			"writing": "あちら",
+			"romaji": ["achira"],
+			"meaning": "that way, that place over there ([polite] あそこ)",
+			"visibility": true
+		},
+		{
+			"id": 103,
+			"writing": "どちら",
+			"romaji": ["dochira"],
+			"meaning": "which way, where ([polite] どこ)",
+			"visibility": true
+		},
+		{
+			"id": 104,
+			"writing": "きょうしつ",
+			"romaji": ["kyooshitsu", "Kyōshitsu"],
+			"meaning": "classroom",
+			"visibility": true
+		},
+		{
+			"id": 105,
+			"writing": "しょくどう",
+			"romaji": ["shokudoo", "Shoku dō"],
+			"meaning": "dinning hall, canteen",
+			"visibility": true
+		},
+		{
+			"id": 106,
+			"writing": "じむしょ",
+			"romaji": ["jimusho"],
+			"meaning": "office",
+			"visibility": true
 		}
 	],
 	"rules": [
