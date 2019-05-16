@@ -525,6 +525,237 @@
 			"romaji": ["jimusho"],
 			"meaning": "office",
 			"visibility": true
+		},
+		{
+			"id": 107,
+			"writing": "かいぎしつ",
+			"romaji": ["kaigishitsu"],
+			"meaning": "conference room, assembly room",
+			"visibility": true
+		},
+		{
+			"id": 108,
+			"writing": "うけつけ",
+			"romaji": ["uketsuke"],
+			"meaning": "reception desk",
+			"visibility": true
+		},
+		{
+			"id": 109,
+			"writing": "ロビー",
+			"romaji": ["robii", "robī"],
+			"meaning": "lobby",
+			"visibility": true
+		},
+		{
+			"id": 110,
+			"writing": "へや",
+			"romaji": ["heya"],
+			"meaning": "room",
+			"visibility": true
+		},
+		{
+			"id": 111,
+			"writing": "へや",
+			"romaji": ["heya"],
+			"meaning": "room",
+			"visibility": true
+		},
+		{
+			"id": 112,
+			"writing": "トイレ (おてあらい)",
+			"romaji": ["toire (otearai)", "toire (o tearai)"],
+			"meaning": "toilet, rest room",
+			"visibility": true
+		},
+		{
+			"id": 113,
+			"writing": "かいだん",
+			"romaji": ["kaidan"],
+			"meaning": "staircase",
+			"visibility": true
+		},
+		{
+			"id": 114,
+			"writing": "エレベーター",
+			"romaji": ["erebeetaa", "erebētā"],
+			"meaning": "elevator, lift",
+			"visibility": true
+		},
+		{
+			"id": 115,
+			"writing": "エスカレーター",
+			"romaji": ["esukareetaa", "esukarētā"],
+			"meaning": "escalator",
+			"visibility": true
+		},
+		{
+			"id": 116,
+			"writing": "[お]くに",
+			"romaji": ["o kuni"],
+			"meaning": "country",
+			"visibility": true
+		},
+		{
+			"id": 117,
+			"writing": "かいしゃ",
+			"romaji": ["kasha"],
+			"meaning": "company",
+			"visibility": true
+		},
+		{
+			"id": 118,
+			"writing": "うち",
+			"romaji": ["uchi"],
+			"meaning": "house, home",
+			"visibility": true
+		},
+		{
+			"id": 119,
+			"writing": "でんわ",
+			"romaji": ["denwa"],
+			"meaning": "telephone, telephone call",
+			"visibility": true
+		},
+		{
+			"id": 120,
+			"writing": "くつ",
+			"romaji": ["kutsu"],
+			"meaning": "shoes",
+			"visibility": true
+		},
+		{
+			"id": 121,
+			"writing": "ネクタイ",
+			"romaji": ["nekutai"],
+			"meaning": "necktie",
+			"visibility": true
+		},
+		{
+			"id": 122,
+			"writing": "ワイン",
+			"romaji": ["wain"],
+			"meaning": "wine",
+			"visibility": true
+		},
+		{
+			"id": 123,
+			"writing": "たばこ",
+			"romaji": ["tabako"],
+			"meaning": "tobacco, cigarette",
+			"visibility": true
+		},
+		{
+			"id": 124,
+			"writing": "うりば",
+			"romaji": ["uriba"],
+			"meaning": "department, counter (in a department store)",
+			"visibility": true
+		},
+		{
+			"id": 125,
+			"writing": "ちか",
+			"romaji": ["chika"],
+			"meaning": "basement",
+			"visibility": true
+		},
+		{
+			"id": 126,
+			"writing": "~かい (~がい)",
+			"romaji": ["~kai ~gai"],
+			"meaning": "th floor",
+			"visibility": true
+		},
+		{
+			"id": 127,
+			"writing": "なんがい",
+			"romaji": ["nankai", "nan ga i"],
+			"meaning": "what floor",
+			"visibility": true
+		},
+		{
+			"id": 128,
+			"writing": "~えん",
+			"romaji": ["~en"],
+			"meaning": "what floor",
+			"visibility": true
+		},
+		{
+			"id": 129,
+			"writing": "いくら",
+			"romaji": ["ikura"],
+			"meaning": "how much",
+			"visibility": true
+		},
+		{
+			"id": 130,
+			"writing": "ひゃく",
+			"romaji": ["hyaku"],
+			"meaning": "hundred",
+			"visibility": true
+		},
+		{
+			"id": 131,
+			"writing": "せん",
+			"romaji": ["sen"],
+			"meaning": "thousand",
+			"visibility": true
+		},
+		{
+			"id": 132,
+			"writing": "まん",
+			"romaji": ["man"],
+			"meaning": "ten thousand",
+			"visibility": true
+		},
+		{
+			"id": 133,
+			"writing": "すみません",
+			"romaji": ["sumimasen"],
+			"meaning": "excuse me",
+			"visibility": true
+		},
+		{
+			"id": 134,
+			"writing": "~でございます",
+			"romaji": ["degozaimasu"],
+			"meaning": "[polite] です",
+			"visibility": true
+		},
+		{
+			"id": 135,
+			"writing": "[~を]みせてください",
+			"romaji": ["[~wo] misetrekudasai", "[~o] misetrekudasai"],
+			"meaning": "please show me ~",
+			"visibility": true
+		},
+		{
+			"id": 136,
+			"writing": "じゃ",
+			"romaji": ["ja"],
+			"meaning": "well then, in that case",
+			"visibility": true
+		},
+		{
+			"id": 137,
+			"writing": "[~を]ください",
+			"romaji": ["[~wo] kudasai", "[~o] kudasai"],
+			"meaning": "give me [~], please",
+			"visibility": true
+		},
+		{
+			"id": 138,
+			"writing": "イタリア",
+			"romaji": ["itaria"],
+			"meaning": "Italy",
+			"visibility": true
+		},
+		{
+			"id": 139,
+			"writing": "スイス",
+			"romaji": ["suisu"],
+			"meaning": "Switzerland",
+			"visibility": true
 		}
 	],
 	"rules": [
