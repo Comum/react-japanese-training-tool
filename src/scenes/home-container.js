@@ -18,7 +18,7 @@ class HomeContainer extends React.Component {
 			{ id: 1, name: 'Intro', selected: true, contentName: 'intro' },
 			{ id: 2, name: 'Alphabets', selected: false, contentName: 'alphabet' },
 			{ id: 3, name: 'Vocabulary', selected: false, contentName: 'vocabulary' },
-			{ id: 4, name: 'Rules', selected: false, contentName: 'rules' },
+			{ id: 4, name: 'Grammar', selected: false, contentName: 'grammar' },
 			{ id: 5, name: 'Alphabet practice', selected: false, contentName: 'practice' },
 		],
 		content: 'intro',

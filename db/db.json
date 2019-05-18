@@ -758,24 +758,87 @@
 			"visibility": true
 		}
 	],
-	"rules": [
-		{
-			"id": 1,
-			"name": "Long vowel",
-			"hiragana": [
-				{ "id": 1, "description": "write あ after the previous char if ending in a" },
-				{ "id": 2, "description": "write い after the previous char if ending in i" },
-				{ "id": 3, "description": "write え after the previous char if ending in e" },
-				{ "id": 4, "description": "write う after the previous char if ending in u" },
-				{ "id": 5, "description": "write う / お after the previous char if ending in o, more likely to be う" }
-			],
-			"katakana": [{ "id": 1, "description": "write ー after the previous char" }]
-		},
-		{
-			"id": 1,
-			"name": "Long consonant",
-			"hiragana": [{ "id": 1, "description": "write (small) っ before the syllable with double consonant" }],
-			"katakana": [{ "id": 1, "description": "write (small) ッ before the syllable with double consonant" }]
-		}
-	]
+	"grammar": {
+		"writtingRules": [
+			{
+				"id": 1,
+				"name": "Long vowel",
+				"hiragana": [
+					{ "id": 1, "description": "write あ after the previous char if ending in a" },
+					{ "id": 2, "description": "write い after the previous char if ending in i" },
+					{ "id": 3, "description": "write え after the previous char if ending in e" },
+					{ "id": 4, "description": "write う after the previous char if ending in u" },
+					{
+						"id": 5,
+						"description": "write う / お after the previous char if ending in o, more likely to be う"
+					}
+				],
+				"katakana": [{ "id": 1, "description": "write ー after the previous char" }]
+			},
+			{
+				"id": 2,
+				"name": "Long consonant",
+				"hiragana": [{ "id": 1, "description": "write (small) っ before the syllable with double consonant" }],
+				"katakana": [{ "id": 1, "description": "write (small) ッ before the syllable with double consonant" }]
+			}
+		],
+		"grammarRules": [
+			{
+				"id": 1,
+				"name": "N1 は N2 です",
+				"particles": [
+					{
+						"id": 1,
+						"name": "は",
+						"description": "The particle は indicates that the word before it is the topic of the sentence. You select a noun you want to talk abouyt, add は to show that it is the topic and give a statment about the topic.",
+						"examples": [
+							{
+								"id": 1,
+								"statement": "わたしはマイク . ミラーです",
+								"translation": "I am Mike Miller"
+							}
+						],
+						"notes": [{ "id": 1, "note": "The particle は is read わ." }]
+					},
+					{
+						"id": 2,
+						"name": "です",
+						"description": "Nouns used with です work as predicates\nです indicates judgement or assertion\nです also conveys that the speaker is being polite towards the listener\nです inflects when thye sentence is negative or in the past tense.",
+						"examples": [
+							{
+								"id": 1,
+								"statement": "わたしはインジニアです",
+								"translation": "I am an enginner"
+							}
+						],
+						"notes": []
+					}
+				]
+			},
+			{
+				"id": 2,
+				"name": "N1 は N2 じゃ ありません",
+				"particles": [
+					{
+						"id": 1,
+						"name": "",
+						"description": "じゃ ありません is the negative form of です. It is the form used in daily conversation. For a formal speech or writting, では ありません is used instead.",
+						"examples": [
+							{
+								"id": 1,
+								"statement": "サントスさんはがくせいじゃ ありません",
+								"translation": "Mr. Santos is not a student."
+							},
+							{
+								"id": 1,
+								"statement": "サントスさんはがくせいでは ありません",
+								"translation": "[polite] Mr. Santos is not a student."
+							}
+						],
+						"notes": [{ "id": 1, "note": "は in では is read わ." }]
+					}
+				]
+			}
+		]
+	}
 }
