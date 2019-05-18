@@ -2,9 +2,16 @@ import React from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 
+import WrittingRules from '../components/writting-rules';
+
 const path = 'http://localhost:3001/grammar';
 
 const MainContent = styled.div`
+	width: 100%;
+	height: 100%;
+`;
+
+const ContentContainer = styled.div`
 	width: 100%;
 	height: 100%;
 `;
@@ -35,12 +42,37 @@ class GrammarContent extends React.Component {
 		}
 	};
 
+	getWrittingRules = rules => {
+		if (!rules.length) {
+			return <div />;
+		}
+
+		return <WrittingRules rules={rules} />;
+	};
+
 	getContent = grammar => {
 		if (!Object.keys(grammar).length) {
 			return <div />;
 		}
 
-		return <div>content</div>;
+		let writtingRules = <div />;
+		let grammarRules = <div />;
+
+		if (grammar.writtingRules) {
+			writtingRules = this.getWrittingRules(grammar.writtingRules);
+		}
+
+		/*if (grammar.grammarRules) {
+			grammarRules = 
+		}*/
+
+		return (
+			<ContentContainer>
+				cenas
+				{grammarRules}
+				{writtingRules}
+			</ContentContainer>
+		);
 	};
 
 	render() {
