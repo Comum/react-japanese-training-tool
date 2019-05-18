@@ -7,6 +7,7 @@ import IntroContent from './content/intro-content';
 import DefaultContent from './content/default-content';
 import AlphabetContent from './content/alphabet-content';
 import VocabularyContent from './content/vocabulary-content';
+import GrammarContent from './content/grammar-content';
 
 const ContentContainer = styled.section`
 	width: 100%;
@@ -53,6 +54,8 @@ class HomeContainer extends React.Component {
 				return <AlphabetContent />;
 			case 'vocabulary':
 				return <VocabularyContent />;
+			case 'grammar':
+				return <GrammarContent />;
 			default:
 				return <DefaultContent />;
 		}
