@@ -75,7 +75,6 @@ class GrammarContent extends React.Component {
 	};
 
 	render() {
-		console.log(this.state);
 		const { grammar } = this.state;
 		const content = this.getContent(grammar);
 

@@ -17,7 +17,9 @@ const RulesWrapper = styled.div`
 `;
 
 const RuleContainer = styled.div`
-	width: 100%;
+	width: calc(100% - 30px);
+
+	padding: 0 15px;
 `;
 
 const getRulesElement = ({ rules }) => {
@@ -27,8 +29,8 @@ const getRulesElement = ({ rules }) => {
 		element.push(
 			<RuleContainer key={rule.id}>
 				<Title name={rule.name} />
-				<WrittingRulesList name="hiragana" rules={rule.name.hiragana} />
-				<WrittingRulesList name="katakan" rules={rule.name.katakan} />
+				<WrittingRulesList name="hiragana" rules={rule.hiragana} />
+				<WrittingRulesList name="katakan" rules={rule.katakana} />
 			</RuleContainer>,
 		);
 	});
