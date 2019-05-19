@@ -68,7 +68,6 @@ class GrammarContent extends React.Component {
 
 		return (
 			<ContentContainer>
-				cenas
 				{grammarRules}
 				{writtingRules}
 			</ContentContainer>

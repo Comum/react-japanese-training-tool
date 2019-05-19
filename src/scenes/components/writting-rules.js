@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Title from './title';
+import WrittingRulesList from './writting-rules-list';
 
 const RulesContainer = styled.div`
 	width: 100%;
@@ -26,6 +27,8 @@ const getRulesElement = ({ rules }) => {
 		element.push(
 			<RuleContainer key={rule.id}>
 				<Title name={rule.name} />
+				<WrittingRulesList name="hiragana" rules={rule.name.hiragana} />
+				<WrittingRulesList name="katakan" rules={rule.name.katakan} />
 			</RuleContainer>,
 		);
 	});
