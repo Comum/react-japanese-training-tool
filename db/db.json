@@ -756,6 +756,13 @@
 			"romaji": ["suisu"],
 			"meaning": "Switzerland",
 			"visibility": true
+		},
+		{
+			"id": 140,
+			"writing": "そうです",
+			"romaji": ["soudesu"],
+			"meaning": "That's right",
+			"visibility": true
 		}
 	],
 	"grammar": {
