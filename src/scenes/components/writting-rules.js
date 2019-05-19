@@ -28,9 +28,9 @@ const getRulesElement = ({ rules }) => {
 	rules.forEach(rule => {
 		element.push(
 			<RuleContainer key={rule.id}>
-				<Title name={rule.name} />
-				<WrittingRulesList name="hiragana" rules={rule.hiragana} />
-				<WrittingRulesList name="katakan" rules={rule.katakana} />
+				<Title name={rule.name} bold="true" />
+				<WrittingRulesList name="Hiragana" rules={rule.hiragana} />
+				<WrittingRulesList name="Katakana" rules={rule.katakana} />
 			</RuleContainer>,
 		);
 	});

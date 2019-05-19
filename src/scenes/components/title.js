@@ -1,17 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Element = styled.div`
-	width: 100%;
-	height: 40px;
+const Title = props => {
+	const fontWeight = props.bold ? 'bold' : 'initial';
+	const Element = styled.div`
+		width: 100%;
+		height: 40px;
 
-	font-size: 18px;
-	font-weight: bold;
+		font-size: 18px;
+		font-weight: ${fontWeight};
 
-	display: flex;
-	align-items: center;
-`;
+		display: flex;
+		align-items: center;
+	`;
 
-const Title = props => <Element>{props.name}</Element>;
+	return <Element>{props.name}</Element>;
+};
 
 export default Title;
