@@ -787,6 +787,22 @@
 				"name": "Long consonant",
 				"hiragana": [{ "id": 1, "description": "write (small) っ before the syllable with double consonant" }],
 				"katakana": [{ "id": 1, "description": "write (small) ッ before the syllable with double consonant" }]
+			},
+			{
+				"id": 3,
+				"name": "comma",
+				"hiragana": [
+					{
+						"id": 1,
+						"description": "write a comma using 、"
+					}
+				],
+				"katakana": [
+					{
+						"id": 1,
+						"description": "write a comma using 、"
+					}
+				]
 			}
 		],
 		"grammarRules": [
